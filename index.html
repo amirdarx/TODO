@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>dark</title>
+    <meta charset="utf-8">
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha4/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body id="bod" onload="backgen()">
+
+    <div class="container-fluid con ">
+        <div class="text-center align-items-center bbb" id="nox">
+            <h1 onclick="r()">S T A R T</h1>
+        </div>
+        <div class="row" id="ttt">
+
+            <!-- To Do List -->
+            <div class="col vv col-lg-4 col-md-4 col-sm-12 col-12" id="first">
+                <div class="box1">
+                    <p class="ps"> <span id="aval">0 </span> To Do List<i class="fas fa-clipboard-list"></i></p>
+                </div>
+                <div class="box">
+                    <p class="ps"><input type="text" id="first-input" onkeydown="fun(event)"><i class="fas fa-angle-double-down" onclick="addDown()"></i></p>
+                </div>
+                <!-- <div class="box" id="listAdded">
+                    <p class="ps">z<i class="fas fa-angle-double-right"></i><i class="far fa-trash-alt" onclick="remove(this)"></i></p>
+                </div> -->
+            </div>
+
+            <!-- On Doing -->
+            <div class="col vv col-lg-4 col-md-4 col-sm-12 col-12" id="second">
+                <div class="box1">
+                    <p class="ps"> <span id="dovom">0 </span> On Doing<i class="fas fa-fighter-jet"></i></p>
+                </div>
+                <!-- <div class="box">
+                    <p class="ps">aaa<i class="fas fa-angle-double-right"></i><i class="fas fa-angle-double-left"></i></p>
+                </div> -->
+            </div>
+
+            <!--  Tasks Done -->
+            <div class="col vv col-lg-4 col-md-4 col-sm-12 col-12" id="three">
+                <div class="box1">
+                    <p class="ps"> <span id="sevom">0 </span> Tasks Done<i class="far fa-calendar-check"></i></p>
+                </div>
+                <!-- <div class="box">
+                    <p class="ps">aaa<i class="fas fa-check"></i></p>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<!-- JavaScript and dependencies -->
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha4/mdb.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
